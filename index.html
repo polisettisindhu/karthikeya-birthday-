@@ -12,11 +12,12 @@ body {
   height: 100vh;
   font-family: Arial, sans-serif;
   background: url('minecraft copy.jpg') no-repeat center center fixed;
-  background-size: contain;
-  overflow: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
+  background-attachment:scroll;
+  overflow-x: hidden;
+  overflow-y:auto;
+  padding-top:20px;
+  padding bottom:20px;
 }
 
 /* White box container */
@@ -28,8 +29,7 @@ body {
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  max-height:90vh;
-  overflow-y:auto;
+  margin:0 auto
 }
 
 /* Siddharth image */
@@ -82,17 +82,13 @@ body {
 /* 📱 MOBILE FIX */
 @media (max-width:600px){
 
-body{
-overflow:auto;
-}
-
 .white-box{
 width:95%;
 padding:20px;
 }
 
 .white-box h1{
-font-size:26px;
+font-size:28px;
 }
 
 .white-box h2{
